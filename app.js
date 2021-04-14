@@ -1,9 +1,17 @@
 const http = require('http');
 
-const routes = require('./routes');
+const express = require('express');
 
-console.log(routes.someText);
+const app = express();
 
-const server = http.createServer(routes.handler);
+app.use((req, res, next)=> {
+    console.log('in the midleware')
+    next();
+});
+app.use((req, res, next)=> {
+    console.log('in the next midleware')
+});
+
+const server = http.createServer(app);
 
 server.listen(3000);
