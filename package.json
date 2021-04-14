@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/fabricioLVmagalhaes/NodeJSTheCompleteGuideCourse/issues"
   },
-  "homepage": "https://github.com/fabricioLVmagalhaes/NodeJSTheCompleteGuideCourse#readme"
+  "homepage": "https://github.com/fabricioLVmagalhaes/NodeJSTheCompleteGuideCourse#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
