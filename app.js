@@ -10,6 +10,7 @@ app.use((req, res, next)=> {
 });
 app.use((req, res, next)=> {
     console.log('in the next midleware')
+    res.send('<h1>Hello From Express</h1>');
 });
 
 const server = http.createServer(app);
